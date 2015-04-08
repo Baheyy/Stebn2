@@ -46,3 +46,23 @@ Route::get('admin/viewBikeStations', 'AdminController@viewBikeStations');
 Route::get('bikestations', 'UserController@bikeStations');
 
 Route::post('viewBikeStations', 'AdminController@viewBikes');
+
+Route::get('/admin/updateMinTime', 'AdminController@UpdateMinTime');
+
+Route::post('UpdateBikeTime', 'AdminController@UpdateBikeTime');
+
+Route::get('/admin/updatePrice', 'AdminController@updatePrice');
+
+Route::post('updatePrice', 'AdminController@updateBikePrice');
+
+Route::get('Customer/welcome' ,'CustomerController@index');
+
+Route::get('Customer/RentABike','CustomerController@RentABike');
+
+Route::get('Customer/ViewRentedBikes','CustomerController@ViewRentedBikes');
+
+Route::post('RentABike', 'CustomerController@RentTheBike');
+
+Route::get('Customer/ParkABike','CustomerController@ParkABike');
+
+Route::post('ParkABike', 'CustomerController@ParkTheBike');

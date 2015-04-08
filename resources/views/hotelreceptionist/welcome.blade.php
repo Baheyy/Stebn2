@@ -4,7 +4,7 @@
 
 <div class="container">
 
-    <h1> Hello {{$user->name}}! </h1>
+    <h1> Hello </h1>
 
     <button class="btn btn-default">
         <a href="/authentication/register">Create A New Customer </a></button>
